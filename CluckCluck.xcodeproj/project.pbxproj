@@ -15,6 +15,11 @@
 		91B1B2DD1F16F3B200EA0E70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91B1B2DB1F16F3B200EA0E70 /* LaunchScreen.storyboard */; };
 		91B1B2E51F16F46000EA0E70 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91B1B2E41F16F46000EA0E70 /* GoogleService-Info.plist */; };
 		91B1B2EB1F184D7A00EA0E70 /* Jack in the Box.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91B1B2EA1F184D7A00EA0E70 /* Jack in the Box.ttf */; };
+		91B1B2ED1F185D7D00EA0E70 /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B1B2EC1F185D7D00EA0E70 /* FancyView.swift */; };
+		91B1B2F01F185E3500EA0E70 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B1B2EF1F185E3500EA0E70 /* Constants.swift */; };
+		91B1B2F21F18652A00EA0E70 /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B1B2F11F18652A00EA0E70 /* RoundBtn.swift */; };
+		91B1B2F41F18684800EA0E70 /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B1B2F31F18684800EA0E70 /* FancyField.swift */; };
+		91B1B2F61F186A9900EA0E70 /* FancyBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B1B2F51F186A9900EA0E70 /* FancyBtn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		91B1B2DE1F16F3B200EA0E70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91B1B2E41F16F46000EA0E70 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		91B1B2EA1F184D7A00EA0E70 /* Jack in the Box.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jack in the Box.ttf"; sourceTree = "<group>"; };
+		91B1B2EC1F185D7D00EA0E70 /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
+		91B1B2EF1F185E3500EA0E70 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		91B1B2F11F18652A00EA0E70 /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
+		91B1B2F31F18684800EA0E70 /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
+		91B1B2F51F186A9900EA0E70 /* FancyBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
 		CF7D6162AC6918A53EBF3B22 /* Pods-CluckCluck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CluckCluck.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CluckCluck/Pods-CluckCluck.debug.xcconfig"; sourceTree = "<group>"; };
 		F345753B90DFC7A21EC49876 /* Pods-CluckCluck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CluckCluck.release.xcconfig"; path = "Pods/Target Support Files/Pods-CluckCluck/Pods-CluckCluck.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +83,7 @@
 		91B1B2D11F16F3B200EA0E70 /* CluckCluck */ = {
 			isa = PBXGroup;
 			children = (
+				91B1B2EE1F185E1E00EA0E70 /* Util */,
 				91B1B2E91F184D5D00EA0E70 /* Resources */,
 				91B1B2E81F177B7300EA0E70 /* Model */,
 				91B1B2E71F177B6D00EA0E70 /* View */,
@@ -98,6 +109,10 @@
 			isa = PBXGroup;
 			children = (
 				91B1B2D41F16F3B200EA0E70 /* SignInVC.swift */,
+				91B1B2EC1F185D7D00EA0E70 /* FancyView.swift */,
+				91B1B2F11F18652A00EA0E70 /* RoundBtn.swift */,
+				91B1B2F31F18684800EA0E70 /* FancyField.swift */,
+				91B1B2F51F186A9900EA0E70 /* FancyBtn.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -115,6 +130,14 @@
 				91B1B2EA1F184D7A00EA0E70 /* Jack in the Box.ttf */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		91B1B2EE1F185E1E00EA0E70 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				91B1B2EF1F185E3500EA0E70 /* Constants.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 		C1B203845D87845869EC74FE /* Pods */ = {
@@ -252,8 +275,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91B1B2F41F18684800EA0E70 /* FancyField.swift in Sources */,
 				91B1B2D51F16F3B200EA0E70 /* SignInVC.swift in Sources */,
+				91B1B2F21F18652A00EA0E70 /* RoundBtn.swift in Sources */,
 				91B1B2D31F16F3B200EA0E70 /* AppDelegate.swift in Sources */,
+				91B1B2ED1F185D7D00EA0E70 /* FancyView.swift in Sources */,
+				91B1B2F01F185E3500EA0E70 /* Constants.swift in Sources */,
+				91B1B2F61F186A9900EA0E70 /* FancyBtn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
