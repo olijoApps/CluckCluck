@@ -14,6 +14,7 @@
 		91B1B2DA1F16F3B200EA0E70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91B1B2D91F16F3B200EA0E70 /* Assets.xcassets */; };
 		91B1B2DD1F16F3B200EA0E70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91B1B2DB1F16F3B200EA0E70 /* LaunchScreen.storyboard */; };
 		91B1B2E51F16F46000EA0E70 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91B1B2E41F16F46000EA0E70 /* GoogleService-Info.plist */; };
+		91B1B2EB1F184D7A00EA0E70 /* Jack in the Box.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91B1B2EA1F184D7A00EA0E70 /* Jack in the Box.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		91B1B2DC1F16F3B200EA0E70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91B1B2DE1F16F3B200EA0E70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91B1B2E41F16F46000EA0E70 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		91B1B2EA1F184D7A00EA0E70 /* Jack in the Box.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jack in the Box.ttf"; sourceTree = "<group>"; };
 		CF7D6162AC6918A53EBF3B22 /* Pods-CluckCluck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CluckCluck.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CluckCluck/Pods-CluckCluck.debug.xcconfig"; sourceTree = "<group>"; };
 		F345753B90DFC7A21EC49876 /* Pods-CluckCluck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CluckCluck.release.xcconfig"; path = "Pods/Target Support Files/Pods-CluckCluck/Pods-CluckCluck.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,6 +73,7 @@
 		91B1B2D11F16F3B200EA0E70 /* CluckCluck */ = {
 			isa = PBXGroup;
 			children = (
+				91B1B2E91F184D5D00EA0E70 /* Resources */,
 				91B1B2E81F177B7300EA0E70 /* Model */,
 				91B1B2E71F177B6D00EA0E70 /* View */,
 				91B1B2E61F177B6500EA0E70 /* Controller */,
@@ -104,6 +107,14 @@
 			children = (
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		91B1B2E91F184D5D00EA0E70 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				91B1B2EA1F184D7A00EA0E70 /* Jack in the Box.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		C1B203845D87845869EC74FE /* Pods */ = {
@@ -181,6 +192,7 @@
 				91B1B2DD1F16F3B200EA0E70 /* LaunchScreen.storyboard in Resources */,
 				91B1B2DA1F16F3B200EA0E70 /* Assets.xcassets in Resources */,
 				91B1B2D81F16F3B200EA0E70 /* Main.storyboard in Resources */,
+				91B1B2EB1F184D7A00EA0E70 /* Jack in the Box.ttf in Resources */,
 				91B1B2E51F16F46000EA0E70 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
