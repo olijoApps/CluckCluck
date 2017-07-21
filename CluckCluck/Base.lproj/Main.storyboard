@@ -31,7 +31,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CluckCluck !" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6uY-s9-e4A">
-                                        <rect key="frame" x="55" y="15" width="210" height="70"/>
+                                        <rect key="frame" x="55" y="20" width="210" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="210" id="VlV-MZ-C84"/>
                                             <constraint firstAttribute="height" constant="70" id="snJ-kB-7tl"/>
@@ -44,7 +44,7 @@
                                 <color key="backgroundColor" red="0.0" green="0.73725490196078436" blue="0.83137254901960778" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="6uY-s9-e4A" firstAttribute="centerX" secondItem="hah-hx-tA9" secondAttribute="centerX" id="K1m-tV-Bvm"/>
-                                    <constraint firstItem="6uY-s9-e4A" firstAttribute="centerY" secondItem="hah-hx-tA9" secondAttribute="centerY" id="bdm-wa-nbg"/>
+                                    <constraint firstItem="6uY-s9-e4A" firstAttribute="centerY" secondItem="hah-hx-tA9" secondAttribute="centerY" constant="5" id="bdm-wa-nbg"/>
                                     <constraint firstAttribute="height" constant="100" id="cMK-5f-EcO"/>
                                 </constraints>
                             </view>
@@ -91,6 +91,9 @@
                                     <constraint firstAttribute="width" constant="150" id="ccB-rs-eRa"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="f"/>
+                                <connections>
+                                    <action selector="facebookBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tjH-79-CDd"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="rTQ-gV-sd0">
                                 <rect key="frame" x="46" y="334" width="228" height="113"/>

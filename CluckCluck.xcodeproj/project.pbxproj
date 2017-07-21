@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		708DCD326F755523E780291F /* Pods_CluckCluck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4D80870ACCDB65D285D587 /* Pods_CluckCluck.framework */; };
 		91B1B2D31F16F3B200EA0E70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B1B2D21F16F3B200EA0E70 /* AppDelegate.swift */; };
 		91B1B2D51F16F3B200EA0E70 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B1B2D41F16F3B200EA0E70 /* SignInVC.swift */; };
 		91B1B2D81F16F3B200EA0E70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91B1B2D61F16F3B200EA0E70 /* Main.storyboard */; };
@@ -20,10 +19,11 @@
 		91B1B2F21F18652A00EA0E70 /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B1B2F11F18652A00EA0E70 /* RoundBtn.swift */; };
 		91B1B2F41F18684800EA0E70 /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B1B2F31F18684800EA0E70 /* FancyField.swift */; };
 		91B1B2F61F186A9900EA0E70 /* FancyBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B1B2F51F186A9900EA0E70 /* FancyBtn.swift */; };
+		CE04E93D9C7D1DB591A98CC2 /* Pods_CluckCluck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D380606400208AA9C9B8D9 /* Pods_CluckCluck.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6E4D80870ACCDB65D285D587 /* Pods_CluckCluck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CluckCluck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33D380606400208AA9C9B8D9 /* Pods_CluckCluck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CluckCluck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		91B1B2CF1F16F3B200EA0E70 /* CluckCluck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CluckCluck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91B1B2D21F16F3B200EA0E70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91B1B2D41F16F3B200EA0E70 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -38,6 +38,7 @@
 		91B1B2F11F18652A00EA0E70 /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
 		91B1B2F31F18684800EA0E70 /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
 		91B1B2F51F186A9900EA0E70 /* FancyBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
+		91B1B3001F21D1E700EA0E70 /* CluckCluck.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CluckCluck.entitlements; sourceTree = "<group>"; };
 		CF7D6162AC6918A53EBF3B22 /* Pods-CluckCluck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CluckCluck.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CluckCluck/Pods-CluckCluck.debug.xcconfig"; sourceTree = "<group>"; };
 		F345753B90DFC7A21EC49876 /* Pods-CluckCluck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CluckCluck.release.xcconfig"; path = "Pods/Target Support Files/Pods-CluckCluck/Pods-CluckCluck.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -47,17 +48,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				708DCD326F755523E780291F /* Pods_CluckCluck.framework in Frameworks */,
+				CE04E93D9C7D1DB591A98CC2 /* Pods_CluckCluck.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		78699A3987A74AA0A1C38DBF /* Frameworks */ = {
+		56BB07E557CB982290F7D372 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6E4D80870ACCDB65D285D587 /* Pods_CluckCluck.framework */,
+				33D380606400208AA9C9B8D9 /* Pods_CluckCluck.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -68,7 +69,7 @@
 				91B1B2D11F16F3B200EA0E70 /* CluckCluck */,
 				91B1B2D01F16F3B200EA0E70 /* Products */,
 				C1B203845D87845869EC74FE /* Pods */,
-				78699A3987A74AA0A1C38DBF /* Frameworks */,
+				56BB07E557CB982290F7D372 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +84,8 @@
 		91B1B2D11F16F3B200EA0E70 /* CluckCluck */ = {
 			isa = PBXGroup;
 			children = (
+				91B1B3001F21D1E700EA0E70 /* CluckCluck.entitlements */,
+				91B1B2F71F21CDBC00EA0E70 /* New Group */,
 				91B1B2EE1F185E1E00EA0E70 /* Util */,
 				91B1B2E91F184D5D00EA0E70 /* Resources */,
 				91B1B2E81F177B7300EA0E70 /* Model */,
@@ -140,6 +143,13 @@
 			name = Util;
 			sourceTree = "<group>";
 		};
+		91B1B2F71F21CDBC00EA0E70 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
 		C1B203845D87845869EC74FE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +196,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = LSZ87KVZP6;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -407,6 +422,7 @@
 			baseConfigurationReference = CF7D6162AC6918A53EBF3B22 /* Pods-CluckCluck.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CluckCluck/CluckCluck.entitlements;
 				DEVELOPMENT_TEAM = LSZ87KVZP6;
 				INFOPLIST_FILE = CluckCluck/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -421,6 +437,7 @@
 			baseConfigurationReference = F345753B90DFC7A21EC49876 /* Pods-CluckCluck.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CluckCluck/CluckCluck.entitlements;
 				DEVELOPMENT_TEAM = LSZ87KVZP6;
 				INFOPLIST_FILE = CluckCluck/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
