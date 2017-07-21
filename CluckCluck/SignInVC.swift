@@ -13,6 +13,9 @@ import Firebase
 
 class SignInVC: UIViewController {
 
+    @IBOutlet weak var emailField: FancyField!
+    @IBOutlet weak var pwdField: FancyField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -52,6 +55,25 @@ class SignInVC: UIViewController {
         })
     }
     
+    @IBAction func signInTapped(_ sender: Any) {
+        
+        // So once the SignIn button is tapped, we need to make sure that there is text in the fields
+        if let email = emailField.text, let pwd = pwdField.text {
+            Auth.auth().signIn(withEmail: email, password: pwd, completion: { (user, error) in
+                if error == nil {
+                    print("TYRON: Congrats, email user authenticated - you've signed in")
+                } else {
+                    Auth.auth().createUser(withEmail: email, password: pwd, completion: { (user, error) in
+                        if error != nil {
+                            print("TYRON: Unable to authenticate with Firebase using Email - Password must be atleast 6 characters long")
+                        } else {
+                            print("TYRON: Successfully authenticated with firebase")
+                        }
+                    })
+                }
+            })
+        }
+    }
 }
 
 

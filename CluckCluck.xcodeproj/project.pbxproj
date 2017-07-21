@@ -198,7 +198,7 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -422,7 +422,6 @@
 			baseConfigurationReference = CF7D6162AC6918A53EBF3B22 /* Pods-CluckCluck.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = CluckCluck/CluckCluck.entitlements;
 				DEVELOPMENT_TEAM = LSZ87KVZP6;
 				INFOPLIST_FILE = CluckCluck/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -437,7 +436,6 @@
 			baseConfigurationReference = F345753B90DFC7A21EC49876 /* Pods-CluckCluck.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = CluckCluck/CluckCluck.entitlements;
 				DEVELOPMENT_TEAM = LSZ87KVZP6;
 				INFOPLIST_FILE = CluckCluck/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

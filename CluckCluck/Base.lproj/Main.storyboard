@@ -95,29 +95,42 @@
                                     <action selector="facebookBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tjH-79-CDd"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="rTQ-gV-sd0">
-                                <rect key="frame" x="46" y="334" width="228" height="113"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="rTQ-gV-sd0">
+                                <rect key="frame" x="46" y="334" width="228" height="105"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1mH-RA-EG2" customClass="FancyField" customModule="CluckCluck" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="228" height="22"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.8651273544520548" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dgK-js-f9N" customClass="FancyField" customModule="CluckCluck" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="38" width="228" height="22"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEN-gv-Ocj" customClass="FancyBtn" customModule="CluckCluck" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="76" width="228" height="37"/>
-                                        <color key="backgroundColor" red="0.14901960784313725" green="0.19607843137254902" blue="0.2196078431372549" alpha="0.77001284246575341" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
-                                        <state key="normal" title="Sign In">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="UYO-fh-EiB">
+                                        <rect key="frame" x="0.0" y="0.0" width="228" height="52"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1mH-RA-EG2" customClass="FancyField" customModule="CluckCluck" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="228" height="22"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.8651273544520548" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dgK-js-f9N" customClass="FancyField" customModule="CluckCluck" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="30" width="228" height="22"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1C6-ju-Yur">
+                                        <rect key="frame" x="0.0" y="68" width="228" height="37"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEN-gv-Ocj" customClass="FancyBtn" customModule="CluckCluck" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="228" height="37"/>
+                                                <color key="backgroundColor" red="0.14901960784313725" green="0.19607843137254902" blue="0.2196078431372549" alpha="0.77001284246575341" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
+                                                <state key="normal" title="Sign In">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="signInTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lcX-dF-aGk"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -143,6 +156,10 @@
                             <constraint firstAttribute="trailing" secondItem="445-5h-quD" secondAttribute="trailing" id="wC4-7i-zOp"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="1mH-RA-EG2" id="2Cv-nx-ycO"/>
+                        <outlet property="pwdField" destination="dgK-js-f9N" id="tSW-dG-7jd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
