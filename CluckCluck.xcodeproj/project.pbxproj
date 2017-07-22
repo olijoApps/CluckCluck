@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		916C81771F22D1BF002FEEC9 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916C81761F22D1BF002FEEC9 /* FeedVC.swift */; };
 		91B1B2D31F16F3B200EA0E70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B1B2D21F16F3B200EA0E70 /* AppDelegate.swift */; };
 		91B1B2D51F16F3B200EA0E70 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B1B2D41F16F3B200EA0E70 /* SignInVC.swift */; };
 		91B1B2D81F16F3B200EA0E70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91B1B2D61F16F3B200EA0E70 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		33D380606400208AA9C9B8D9 /* Pods_CluckCluck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CluckCluck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		916C81761F22D1BF002FEEC9 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		91B1B2CF1F16F3B200EA0E70 /* CluckCluck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CluckCluck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91B1B2D21F16F3B200EA0E70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91B1B2D41F16F3B200EA0E70 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -104,6 +106,8 @@
 		91B1B2E61F177B6500EA0E70 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				91B1B2D41F16F3B200EA0E70 /* SignInVC.swift */,
+				916C81761F22D1BF002FEEC9 /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -111,7 +115,6 @@
 		91B1B2E71F177B6D00EA0E70 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				91B1B2D41F16F3B200EA0E70 /* SignInVC.swift */,
 				91B1B2EC1F185D7D00EA0E70 /* FancyView.swift */,
 				91B1B2F11F18652A00EA0E70 /* RoundBtn.swift */,
 				91B1B2F31F18684800EA0E70 /* FancyField.swift */,
@@ -294,6 +297,7 @@
 				91B1B2D51F16F3B200EA0E70 /* SignInVC.swift in Sources */,
 				91B1B2F21F18652A00EA0E70 /* RoundBtn.swift in Sources */,
 				91B1B2D31F16F3B200EA0E70 /* AppDelegate.swift in Sources */,
+				916C81771F22D1BF002FEEC9 /* FeedVC.swift in Sources */,
 				91B1B2ED1F185D7D00EA0E70 /* FancyView.swift in Sources */,
 				91B1B2F01F185E3500EA0E70 /* Constants.swift in Sources */,
 				91B1B2F61F186A9900EA0E70 /* FancyBtn.swift in Sources */,

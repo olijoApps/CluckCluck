@@ -10,6 +10,7 @@ import UIKit
 import FBSDKCoreKit
 import FBSDKLoginKit
 import Firebase
+import SwiftKeychainWrapper
 
 class SignInVC: UIViewController {
 
@@ -19,12 +20,12 @@ class SignInVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewDidAppear(_ animated: Bool) {
+        if let _ = KeychainWrapper.standard.string(forKey: KEY_UID) {
+            performSegue(withIdentifier: "goToFeed", sender: nil)
+        }
     }
 
     @IBAction func facebookBtnPressed(_ sender: Any) {
@@ -51,6 +52,9 @@ class SignInVC: UIViewController {
                 print("TYRON: Unable to authenticate with Firebase - \(String(describing: error))")
             } else {
                 print("TYRON: Successfully authenticated with Firebase")
+                if let user = user {
+                    self.completeSignIn(id: user.uid)
+                }
             }
         })
     }
@@ -61,20 +65,49 @@ class SignInVC: UIViewController {
         if let email = emailField.text, let pwd = pwdField.text {
             Auth.auth().signIn(withEmail: email, password: pwd, completion: { (user, error) in
                 if error == nil {
-                    print("TYRON: Congrats, email user authenticated - you've signed in")
+                    print("TYRON: Congrats, email user authenticated with Firebase - you've signed in")
+                    if let user = user {
+                        self.completeSignIn(id: user.uid)
+                    }
+                    
                 } else {
                     Auth.auth().createUser(withEmail: email, password: pwd, completion: { (user, error) in
                         if error != nil {
                             print("TYRON: Unable to authenticate with Firebase using Email - Password must be atleast 6 characters long")
                         } else {
                             print("TYRON: Successfully authenticated with firebase")
+                            if let user = user {
+                                self.completeSignIn(id: user.uid)
+                            }
+                            
                         }
                     })
                 }
             })
         }
     }
+    
+    func completeSignIn(id: String) {
+        let keychainResult = KeychainWrapper.standard.set(id, forKey: KEY_UID)
+        print("TYRON: Data successfully saved to keychain \(keychainResult)")
+        performSegue(withIdentifier: "goToFeed", sender: nil)
+    }
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
