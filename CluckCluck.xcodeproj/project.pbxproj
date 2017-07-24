@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		916C81771F22D1BF002FEEC9 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916C81761F22D1BF002FEEC9 /* FeedVC.swift */; };
+		916C81791F2375F4002FEEC9 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916C81781F2375F4002FEEC9 /* CircleView.swift */; };
+		916C817B1F238398002FEEC9 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916C817A1F238398002FEEC9 /* PostCell.swift */; };
+		916C817E1F257AFF002FEEC9 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916C817D1F257AFF002FEEC9 /* DataService.swift */; };
 		91B1B2D31F16F3B200EA0E70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B1B2D21F16F3B200EA0E70 /* AppDelegate.swift */; };
 		91B1B2D51F16F3B200EA0E70 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B1B2D41F16F3B200EA0E70 /* SignInVC.swift */; };
 		91B1B2D81F16F3B200EA0E70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91B1B2D61F16F3B200EA0E70 /* Main.storyboard */; };
@@ -26,6 +29,9 @@
 /* Begin PBXFileReference section */
 		33D380606400208AA9C9B8D9 /* Pods_CluckCluck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CluckCluck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		916C81761F22D1BF002FEEC9 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		916C81781F2375F4002FEEC9 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		916C817A1F238398002FEEC9 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		916C817D1F257AFF002FEEC9 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		91B1B2CF1F16F3B200EA0E70 /* CluckCluck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CluckCluck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91B1B2D21F16F3B200EA0E70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91B1B2D41F16F3B200EA0E70 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -65,6 +71,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		916C817C1F257AE5002FEEC9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				916C817D1F257AFF002FEEC9 /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		91B1B2C61F16F3B200EA0E70 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +100,7 @@
 		91B1B2D11F16F3B200EA0E70 /* CluckCluck */ = {
 			isa = PBXGroup;
 			children = (
+				916C817C1F257AE5002FEEC9 /* Services */,
 				91B1B3001F21D1E700EA0E70 /* CluckCluck.entitlements */,
 				91B1B2F71F21CDBC00EA0E70 /* New Group */,
 				91B1B2EE1F185E1E00EA0E70 /* Util */,
@@ -119,6 +134,8 @@
 				91B1B2F11F18652A00EA0E70 /* RoundBtn.swift */,
 				91B1B2F31F18684800EA0E70 /* FancyField.swift */,
 				91B1B2F51F186A9900EA0E70 /* FancyBtn.swift */,
+				916C81781F2375F4002FEEC9 /* CircleView.swift */,
+				916C817A1F238398002FEEC9 /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -293,14 +310,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				916C81791F2375F4002FEEC9 /* CircleView.swift in Sources */,
 				91B1B2F41F18684800EA0E70 /* FancyField.swift in Sources */,
 				91B1B2D51F16F3B200EA0E70 /* SignInVC.swift in Sources */,
 				91B1B2F21F18652A00EA0E70 /* RoundBtn.swift in Sources */,
 				91B1B2D31F16F3B200EA0E70 /* AppDelegate.swift in Sources */,
+				916C817E1F257AFF002FEEC9 /* DataService.swift in Sources */,
 				916C81771F22D1BF002FEEC9 /* FeedVC.swift in Sources */,
 				91B1B2ED1F185D7D00EA0E70 /* FancyView.swift in Sources */,
 				91B1B2F01F185E3500EA0E70 /* Constants.swift in Sources */,
 				91B1B2F61F186A9900EA0E70 /* FancyBtn.swift in Sources */,
+				916C817B1F238398002FEEC9 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
