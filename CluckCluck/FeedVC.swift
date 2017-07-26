@@ -10,17 +10,25 @@ import UIKit
 import Firebase
 import SwiftKeychainWrapper
 
-class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var imageAdd: CircleView!
     
     var posts = [Post]()
+    var imagePicker: UIImagePickerController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         tableView.dataSource = self
         tableView.delegate = self
+        
+        //Initialise the image picker:
+        imagePicker = UIImagePickerController()
+        imagePicker.allowsEditing = true
+        imagePicker.delegate = self
+        
         
         // We can add a "listener" to observe and listen for changes under each branch on firebase
         DataService.ds.REF_POSTS.observe(.value, with: { (snapshot) in
@@ -62,6 +70,20 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
     }
     
+    // Now to create the image picker function:
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        if let image = info[UIImagePickerControllerEditedImage] as? UIImage {
+            imageAdd.image = image
+        } else {
+            print("TYRON: A valid image wasnt selected")
+        }
+        imagePicker.dismiss(animated: true, completion: nil)
+    }
+    
+    
+    @IBAction func addImageTapped(_ sender: Any) {
+        present(imagePicker, animated: true, completion: nil)
+    }
     
     @IBAction func signOutBtnPressed(_ sender: Any) {
         //Now we need to do 2 things: SignOut of Firebase and remove our ID from the keychain
